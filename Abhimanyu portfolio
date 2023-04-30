@@ -1,0 +1,604 @@
+<html>
+  <head>
+    <title>
+      Template CV site
+    </title>
+    <meta charset="UTF-8" />
+    <style>
+        html, body{
+  margin:0px;
+  padding:0px;
+  width:100%;
+  font-size:15px;
+  font-family:century gothic;
+}
+div, p, h1, h2, h3, h4, h5, ul, li, a, span{
+  margin:0px;
+  padding:0px;
+}
+.clear{
+  clear:both;
+}
+#conteneur-id{
+  width:100%;
+}
+/*MENU*/
+#conteneur-menu{
+
+}
+.menu{
+  width:100%;
+  background-color:white;
+  box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.2);
+  margin:auto;
+  text-align:center;
+  position:fixed;
+  z-index:999;
+}
+.menu ul{
+  width:100%;
+  margin:auto;
+  padding:15px 0px;
+}
+.menu li{
+  display:inline-block;
+  padding:5px;
+}
+.menu a{
+  text-decoration:none;
+  color:black;
+  background-color:#DDD;
+  transition:0.4s;
+  padding:5px 25px;
+}
+.menu a:hover{
+  text-decoration:none;
+  color:#999;
+  background-color:#FFF;
+  transition:0.4s;
+}
+/*HOME*/
+#conteneur-home{
+  width:100%;
+  background:url(https://images.unsplash.com/photo-1445452916036-9022dfd33aa8?w=3153) fixed 100% no-repeat;
+  background-size:cover;
+  padding:159.5px 0px 100px 0px;
+  text-align:center;
+}
+.home{
+  width:100%;
+}
+.home h1{
+  font-weight:100;
+  font-size:50px;
+  color:#EEE;
+  padding:0px 0px 5px 0px;
+}
+.home h2{
+  font-weight:100;
+  font-size:30px;
+  color:#DDD;
+  text-transform:uppercase;
+}
+/*ABOUT*/
+#conteneur-about{
+  padding:100px 0px;
+}
+.about{
+  max-width:960px;
+  width:100%;
+  margin:auto;
+}
+.profil-photo{
+  width:50%;
+  float:left;
+}
+.profil-photo img{
+  width:90%;
+}
+.profil-text{
+  width:50%;
+  float:left;
+  position:relative;
+}
+.profil-text h2{
+  padding-bottom:15px;
+  font-size:25px;
+  font-weight:100;
+  text-transform:uppercase;
+}
+.profil-text p{
+padding-bottom:75px;
+text-align:justify;
+}
+.profil-text a{
+  position:absolute;
+  bottom:0px;
+  left:0px;
+  text-decoration:none;
+  color:black;
+  background-color:#DDD;
+  transition:0.4s;
+  padding:5px 25px;
+  border:1px solid white;
+}
+.profil-text a:hover{
+  text-decoration:none;
+  color:#999;
+  border:1px solid #999;
+  background-color:#FFF;
+  transition:0.4s;
+}
+/*SKILLS*/
+#conteneur-skills{
+  padding:100px 0px;
+  background-color:#EEE;
+}
+.skills{
+  max-width:960px;
+  width:100%;
+  margin:auto;
+}
+.title h2{
+  padding-bottom:25px;
+  font-size:25px;
+  font-weight:100;
+  text-align:center;
+  text-transform:uppercase;
+}
+.title p{
+padding-bottom:75px;
+text-align:justify;
+width:100%;
+margin:auto;
+}
+.bardiv{
+  width:100%;
+  margin:auto;
+}
+.bardiv h3{
+  font-size:20px;
+  padding-bottom:5px;
+}
+.progressbar{
+  width:100%;
+  margin:auto;
+  height:5px;
+  background-color:#AAA;
+  position:relative;
+  margin-bottom:15px;
+}
+.progressbar span{
+  height:5px;
+  background-color:#000;
+  z-index:888;
+  position:absolute;
+  top:0px;
+  left:0px;
+}
+.html{
+  width:80%;
+}
+.css{
+  width:90%;
+}
+.javascript{
+  width:45%;
+}
+.php{
+  width:70%;
+}
+.sql{
+  width:60%;
+}
+/*DIPLOMA*/
+#conteneur-qualification{
+  padding:100px 0px;
+}
+.qualification{
+  max-width:960px;
+  width:100%;
+  margin:auto;
+  text-align:center;
+}
+.qualification h2{
+  padding-bottom:50px;
+  font-size:25px;
+  font-weight:100;
+  text-transform:uppercase;
+}
+.lastqualification{
+  padding-left:25px;
+  padding-bottom:25px;
+}
+.lastqualification h3{
+  font-size:20px;
+  padding-bottom:5px;
+  font-weight:100;
+}
+.lastqualification h4{
+  font-size:17px;
+  padding-bottom:5px;
+  font-weight:100;
+  color:#999;
+}
+.othqualification{
+  padding-left:25px;
+  padding-bottom:25px;
+}
+.othqualification h3{
+  font-size:17px;
+  padding-bottom:5px;
+  font-weight:100;
+}
+.othqualification h4{
+  font-size:15px;
+  padding-bottom:5px;
+  font-weight:100;
+  color:#999;
+}
+/*PORTFOLIO*/
+#conteneur-portfolio{
+  padding:100px 0px;
+  background-color:#EEE;
+}
+.portfolio{
+  max-width:960px;
+  width:100%;
+  margin:auto;
+  text-align:center;
+}
+.portfolio h2{
+  padding-bottom:50px;
+  font-size:25px;
+  font-weight:100;
+  text-transform:uppercase;
+}
+.conteneur-portfolio h2{
+  padding-bottom:100px;
+  font-size:80px;
+  color:#000;
+  text-align:center;
+  float: right;
+
+}
+.conteneur-miniature-left{
+  box-shadow:0 0 20px 1px rgba(0,0,0,0.25);
+  transition:.4s;
+ 
+  
+}
+.conteneur-miniature-right{
+  box-shadow:0 0 20px 1px rgba(0,0,0,0.25);
+  transition:.4s;
+  width:47.5%;
+  margin-left:2.5%;
+  
+}
+.miniature-portfolio{
+  width:100%;
+  height:250px;
+}
+.oneport{
+  background:url(https://images.unsplash.com/photo-1504257365157-1496a50d48f2?w=3150&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+  background-size:cover;
+}
+.twoport{
+  background:url(https://images.unsplash.com/photo-1495511623436-ba44aaee07cf?w=2102&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+  background-size:cover;
+}
+.text-miniature{
+  padding:15px 30px 15px 15px;
+}
+.text-miniature h3{
+  font-size:25px;
+  padding-bottom:10px;
+  font-weight:100;
+}
+.text-miniature h4{
+  font-size:18px;
+  color:#666;
+  line-height:25px;
+  font-weight:100;
+}
+.text-miniature h5{
+  font-size:15px;
+  color:#999;
+  line-height:20px;
+  font-weight:100;
+}
+.conteneur-miniature-one:hover{
+  box-shadow:0 0 20px 1px rgba(0,0,0,0.75);
+  transition:.4s;
+}
+/*CONTACT*/
+#conteneur-contact{
+  padding:100px 0px;
+  background:url(https://images.unsplash.com/38/awhCbhLqRceCdjcPQUnn_IMG_0249.jpg?w=1867&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D) fixed 100% no-repeat;
+  background-size:cover;
+}
+.contact{
+  max-width:660px;
+  width:100%;
+  margin:auto;
+  text-align:center;
+}
+.contact h2{
+  padding-bottom:50px;
+  font-size:25px;
+  font-weight:100;
+  text-transform:uppercase;
+  color:#FFF;
+}
+.input h3{
+	margin-top:15px;
+	margin-bottom:10px;
+	color:#fff;
+	font-size:17px;
+  font-weight:100;
+  text-align:left;
+}
+.input textarea{
+	margin-bottom:15px;
+}
+input[type="email"], input[type="text"],  textarea{
+	height:25px;
+	width:100%;
+	padding:2.5px 8px;
+	background-color:rgba(0,0,0,0.4);
+	border:none;
+	border-bottom:1px solid #E3E3E3;
+	box-shadow:none;
+	box-sizing:border-box;
+	border-radius:0;
+	outline:none;
+  color:#fff;
+}
+textarea{
+	min-height:150px;
+	max-height:150px;
+	max-width:100%;
+	max-width:100%;
+}
+input[type="submit"]{
+	font-size:17px;
+	width:100%;
+	display:inline-block;
+	height:25px;
+	padding:0 30px;
+	text-align:center;
+	font-weight:100;
+	line-height:20px;
+	text-transform:uppercase;
+	text-decoration:none;
+	white-space:nowrap;
+	border-radius:0px;
+	border:0;
+	cursor:pointer;
+	box-sizing:border-box;
+	color:white;
+	background-color:rgba(0,0,0,0.5);
+	transition:0.4s;
+}
+input[type="submit"]:hover{
+	background-color:#FFF;
+	color:#000;
+	text-decoration:none;
+	transition:0.4s;
+}
+#conteneur-footer{
+  padding:10px 0px;
+  background-color:#000;
+  color:#FFF;
+  text-align:center;
+}
+.footer a{
+  color:#FFF;
+  text-decoration:none;
+  padding-top:50px;
+  transition:0.4s;
+}
+.footer a:hover{
+  color:#DDD;
+  text-decoration:none;
+  transition:0.4s;
+}
+#blk{
+    color:#000
+}
+#img{
+    border-radius: 200px;
+    height: 450px;
+    width: 300px;
+}
+
+#contact a {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    #contact img {
+        flex-direction: column;
+         width: 40px;
+         height: 40px;
+      }
+    #hacker{
+      height: 80px;
+      width: 100px;
+    }
+    .navbar__ul :hover{
+      border-radius: 20px;
+      background: linear-gradient(45deg, hwb(208 61% 15%), #b4dbe8, #ebf1f3);
+    }
+    </style>
+  </head>
+  <body>
+    <div id="conteneur-id">
+      <div id="conteneur-menu">
+        <div class="menu">
+          <ul>
+            <li><a href="#conteneur-home">HOME</a></li>
+            <li><a href="#conteneur-about">ABOUT</a></li>
+            <li><a href="#conteneur-skills">SKILLS</a></li>
+            <li><a href="#conteneur-qualification">Qualification</a></li>
+            <li><a href="#conteneur-portfolio">PROJECTS</a></li>
+            <li><a href="#conteneur-contact">CONTACT</a></li>
+          </ul>
+       </div>
+      </div>
+      <div id="conteneur-home">
+        <div class="home">
+          <h1 id="blk">Abhimanyu Nema</h1>
+          <h2 id="blk">Developer</h2>
+        </div>
+      </div>
+      <div id="conteneur-about">
+        <div class="about">
+          <div class="profil-photo">
+            <img src="me2.jpg" id="img">
+          </div>
+          <div class="profil-text">
+            <h2>About</h2>
+            <h1>WHO I AM</h1>
+            <P>My self  AbhimanyuNema</P>
+            <p>
+            I am a BCA student who is passionate about computer applications and software development. I have learned various subjects such as data structures, operating systems, user interface design, etc. during my course. I have also gained practical skills by working on projects and assignments using different programming languages and tools. I aspire to join a reputed IT company and contribute to the field of computer science with my knowledge and creativity.`
+              
+              
+            <p>
+               </p>
+            <a href="#">Download CV</a>
+          </div>
+          <div class="clear">
+          </div>
+        </div>
+      </div>
+      <div id="conteneur-skills">
+        <div class="skills">
+          <div class="title">
+            <h2>Skills</h2>
+             <p>
+                Content: A brief update about 
+               what we’ve been up to                        and what’s coming up.
+                For who? Our fans, our friends, or just curious                     people who want to stay in touch
+                Data Science Digest - Weekly
+                Content: A recap of all the top news you don't want                 to miss out on in the big data ecosystem.
+            </p>
+          </div>
+          <div class="bardiv">
+            <h3>HTML</h3>
+            <div class="progressbar">
+              <span class="html"></span>
+            </div>
+            <h3>CSS</h3>
+            <div class="progressbar">
+              <span class="css"></span>
+            </div>
+            <h3>JavaScript</h3>
+            <div class="progressbar">
+              <span class="javascript"></span>
+            </div>
+            <h3>PHP</h3>
+            <div class="progressbar">
+              <span class="php"></span>
+            </div>
+            <h3>SQL</h3>
+            <div class="progressbar">
+              <span class="sql"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="conteneur-qualification">
+         <div class="qualification">
+            <h2>Qualification</h2>
+            <div class="lastqualification">
+              <h3>Bachelors in computer applications</h3>
+              <h4>2022 - 2025</h4>
+            </div>
+            <div class="othqualification">
+              <h3>SAGE University ,(BHOPAL MP)<h3>
+        </div>
+      </div>
+      <div id="conteneur-portfolio">
+        <div class="portfolio">
+          <h2>PROJECTS</h2>
+          <div class="conteneur-miniature-left">
+            <div class="miniature-portfolio oneport">
+            </div>
+            <div class="text-miniature">
+              <h3>
+                SAGE PASS SOLUTION
+              </h3>
+              <h3> HTML,CSS,JS,PHP
+              </h3>
+              <li>This projects helps student to collect their passes on online platform.
+              </li>
+            </div>
+				</div>
+        <!-- <div class="conteneur-miniature-right">
+            <div class="miniature-portfolio twoport">
+            </div>
+            <div class="text-miniature">
+              <h3>
+                Type : Video, Picture, ...
+              </h3>
+              <h4>
+                Title
+              </h4>
+              <h5>
+                Duration : 10 secondes
+              </h5>
+            </div>
+				</div> -->
+        <div class="clear"></div>
+			</div>
+        </div  
+      </div>
+      <div id="conteneur-contact">
+        <div class="contact">
+          <h2>CONTACT</h2>
+          <div id="contact">
+          <a href="https://www.linkedin.com/in/abhimanyu-nema-048477248" target="LikedIn">
+            <img src="https://img.icons8.com/external-those-icons-flat-those-icons/256/external-LinkedIn-Logo-social-media-those-icons-flat-those-icons.png" alt="LinkedIn icon">
+          </a>
+          <a href="https://github.com/AbhimanyuNema" target="GitHub">
+            <img src="https://img.icons8.com/arcade/256/github.png" alt="GitHub icon">
+          </a>
+          <a href="mailto:abhinema09@gmail.com" target="Gmail">
+            <img src="https://img.icons8.com/fluency/256/composing-mail.png" alt="Mail icon">
+          </a>
+          <a href="tel:+918109996209">
+            <img src="https://img.icons8.com/external-nawicon-flat-nawicon/256/external-phone-call-communication-nawicon-flat-nawicon.png" alt="Phone icon">
+          </a>
+          <a href="https://www.hackerrank.com/abhinema09" target="hackerrank">
+              <img src="https://hrcdn.net/fcore/assets/work/header/hackerrank_logo-21e2867566.svg" alt="hacker icon">
+            </a></div>
+          <form name="formulaire" method="POST" action="">
+            <div class="input">
+              <h3>*Name</h3>
+              <input type="text" name="nom" />
+            </div>
+            <div class="input">
+              <h3>*Email</h3>
+              <input type="email" name="email" />
+            </div>
+            <div class="input">
+              <h3>*Object</h3>
+              <input type="text" name="nom" />
+            </div>
+            <div class="input">
+              <h3>*Message</h3>
+              <textarea name="message"></textarea>
+            </div>
+            <div class="input">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+      </div>
+      
+
+    </div>
+  </body
+</html>
